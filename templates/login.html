@@ -20,10 +20,8 @@
     </div>
 
     <ul class="nav navbar-nav navbar-right">
-        <div style="margin-right: 10px; margin-left: 15px; margin-top: 5px; margin-bottom: 5px;" class="container-fluid">
         <p class="text-center"><a href="login.html"><button class="btn btn-primary btn-sm">Login</button></a></p>
         <p class="text-center"><a href="signup.html"><button class="btn btn-primary btn-sm">Sign up</button></a></p>
-        </div>
     </ul>
 
     <div style="color: #0066CC;">
@@ -31,12 +29,26 @@
     <h1><center><FONT size="6.0"<center>International Language Club </font></center></h1>
     </div>
     <hr>
-    <br>
-    <br>
-    <center><img src="Lang.jpg" height="350" width="600"></center>
+    
 </div>
 </div>
 </header>
+
+<body>
+
+<div class="container">
+    <br>
+    <h4>Please Login:</h4>
+    <br>
+    <form action="" class="form-inline" method="post">
+        <input type="text" class="form-control" placeholder="Username" name="username" value="{{ request.form.username }}">
+        <input type="password" class="form-control" placeholder="Password" name="password" value="{{ request.form.password }}">
+        <input class="btn btn-default" type="submit" value="Login">
+    </form>
+
+    <p>{{ error }}</p>
+</div>
+</body>
 
 <body style="background-color: #33FFFF;">
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -44,31 +56,5 @@
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
